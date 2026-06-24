@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pal Akbari - Full Stack Java Developer Portfolio. Specializing in Spring Boot, React, JavaScript, PHP, Laravel, Node.js, and database integration. BCA Graduate of Darshan Institute of Engineering and Technology, MCA Student at LJ Institutes of Computer Applications.">
+    <title>Pal Akbari | Full Stack Java Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Blobs -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a data-scroll-to="home" class="logo-text">Pal</a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a data-scroll-to="home" class="nav-link active">Home</a></li>
+                <li><a data-scroll-to="about" class="nav-link">About</a></li>
+                <li><a data-scroll-to="skills" class="nav-link">Skills</a></li>
+                <li><a data-scroll-to="projects" class="nav-link">Projects</a></li>
+                <li><a data-scroll-to="resume" class="nav-link">Resume</a></li>
+                <li><a data-scroll-to="contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <div class="mobile-menu-toggle" id="mobile-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Side Social Bar -->
+    <div class="social-side-bar">
+        <a href="mailto:palakbari2503@gmail.com" target="_blank" title="Email"><i data-lucide="mail"></i></a>
+        <a href="tel:+919023129014" title="Call"><i data-lucide="phone"></i></a>
+        <a href="https://github.com" target="_blank" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <div class="vertical-line"></div>
+    </div>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge fade-in">
+                        <span class="ping"></span>
+                        <span class="badge-text">Available for Opportunities</span>
+                    </div>
+                    <h1 class="hero-title fade-in-delay-1">
+                        Hi, I'm <span class="gradient-text">Pal Akbari</span>
+                    </h1>
+                    <h2 class="hero-subtitle fade-in-delay-2">
+                        Full Stack <span class="typewriter" id="typewriter-text">Java Developer</span>
+                    </h2>
+                    <p class="hero-description fade-in-delay-3">
+                        BCA graduate from Darshan Institute of Engineering and Technology and MCA student at LJ Institutes of Computer Applications with a passion for designing premium, high-performance web applications. Specializing in Java, Spring Boot, React, PHP, Laravel, Node.js, and database integration.
+                    </p>
+                    <div class="hero-buttons fade-in-delay-4">
+                        <a data-scroll-to="projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a data-scroll-to="contact" class="btn btn-secondary">
+                            <span>Get in Touch</span>
+                            <i data-lucide="message-square"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual fade-in">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card">
+                            <div class="profile-inner">
+                                <div class="profile-glow"></div>
+                                <div class="profile-image-container">
+                                    <img src="assets/Pal.png" alt="Pal Akbari Photo" class="profile-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a data-scroll-to="about" class="scroll-link">
+                    <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+                    <span class="scroll-text">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3>Passionate Developer & Problem Solver</h3>
+                        <p class="about-text-lead">
+                            I am a detail-oriented Web & Full Stack Developer holding a BCA degree from Darshan Institute of Engineering and Technology, Rajkot, and currently pursuing an MCA at LJ Institutes of Computer Applications, Ahmedabad.
+                        </p>
+                        <p class="about-text-body">
+                            My journey began with a strong interest in problem-solving and programming in C and C++, which evolved into building full-stack web architectures. I love structuring clean APIs with Spring Boot, wiring them with responsive React interfaces, and optimization. I am driven by creating software that combines technical performance with intuitive, engaging UI layouts.
+                        </p>
+                        
+                        <div class="info-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="graduation-cap"></i></div>
+                                <div class="highlight-content">
+                                    <h4>Education</h4>
+                                    <p>BCA & MCA Student</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="map-pin"></i></div>
+                                <div class="highlight-content">
+                                    <h4>Location</h4>
+                                    <p>Ahmedabad, India</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i data-lucide="languages"></i></div>
+                                <div class="highlight-content">
+                                    <h4>Languages</h4>
+                                    <p>English, Hindi, Gujarati</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-hobbies">
+                        <div class="glass-card hobby-card">
+                            <h3>Beyond the Code</h3>
+                            <p>When I am not in front of my IDE, you can find me engaging in these activities that fuel my creativity and keep me focused:</p>
+                            <ul class="hobby-list">
+                                <li>
+                                    <span class="hobby-icon"><i data-lucide="tv"></i></span>
+                                    <div class="hobby-desc">
+                                        <h4>Watching News Channels</h4>
+                                        <p>Keeping up with current events and global tech landscapes.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="hobby-icon"><i data-lucide="target"></i></span>
+                                    <div class="hobby-desc">
+                                        <h4>Playing Volleyball</h4>
+                                        <p>Fosters team coordination, quick reflexes, and positive mindset.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="hobby-icon"><i data-lucide="music"></i></span>
+                                    <div class="hobby-desc">
+                                        <h4>Listening to Music</h4>
+                                        <p>Enhances coding focus and helps in mental relaxation.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Toolbox</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-target="backend">Backend & Logic</button>
+                    <button class="tab-btn" data-target="frontend">Frontend UI</button>
+                    <button class="tab-btn" data-target="tools">Tools & Core</button>
+                </div>
+
+                <div class="skills-display">
+                    <!-- Backend Skills -->
+                    <div class="skills-grid active" id="skills-backend">
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper java-icon"><i data-lucide="code-2"></i></div>
+                                <h3>Java, Spring Boot & Hibernate</h3>
+                            </div>
+                            <p>Core Java, OOP principles, RESTful Spring Boot APIs, JPA entity relational mappings, and Hibernate database caching.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 90%;"></div></div>
+                        </div>
+
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper spring-icon"><i data-lucide="cpu"></i></div>
+                                <h3>PHP, Laravel & Node.js</h3>
+                            </div>
+                            <p>Structuring scalable backend architectures, controllers, routing triggers, session management, and microservice APIs with Node/Express.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 85%;"></div></div>
+                        </div>
+
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper logic-icon"><i data-lucide="terminal"></i></div>
+                                <h3>Python & Scripting</h3>
+                            </div>
+                            <p>Writing backend logic, file parsing algorithms, data analysis, automation setups, and system programming utilities.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 80%;"></div></div>
+                        </div>
+
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper security-icon"><i data-lucide="shield-check"></i></div>
+                                <h3>.NET Framework</h3>
+                            </div>
+                            <p>Implementing logic operations, enterprise setups, database integrations, and robust system configurations using .NET specifications.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 80%;"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Skills -->
+                    <div class="skills-grid" id="skills-frontend">
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper react-icon"><i data-lucide="atom"></i></div>
+                                <h3>React.js & Web UI</h3>
+                            </div>
+                            <p>Developing component-driven web layers, dynamic lists, dashboard visual tools, and custom UI components.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 85%;"></div></div>
+                        </div>
+
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper js-icon"><i data-lucide="terminal"></i></div>
+                                <h3>JavaScript (ES6+)</h3>
+                            </div>
+                            <p>Interactive DOM controls, async HTTP calls, validation scripts, local caching, and custom browser visual hooks.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 90%;"></div></div>
+                        </div>
+
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper css-icon"><i data-lucide="palette"></i></div>
+                                <h3>HTML5, CSS3 & Bootstrap</h3>
+                            </div>
+                            <p>Building high-fidelity grids, fluid responsive layouts, styling variables, and applying modern CSS frameworks like Bootstrap.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 90%;"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Core -->
+                    <div class="skills-grid" id="skills-tools">
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper database-icon"><i data-lucide="database"></i></div>
+                                <h3>SQL & Relational Databases</h3>
+                            </div>
+                            <p>Proficient in SQL scripts, schema designs, table relations, MySQL database, and configuring local testing parameters with H2.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 85%;"></div></div>
+                        </div>
+
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper logic-icon"><i data-lucide="binary"></i></div>
+                                <h3>C / C++ Programming</h3>
+                            </div>
+                            <p>Solid programming fundamentals, data structures, runtime optimization, sorting procedures, and logical reasoning tests.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 85%;"></div></div>
+                        </div>
+
+                        <div class="skill-card glass-card">
+                            <div class="skill-header">
+                                <div class="skill-icon-wrapper tools-icon"><i data-lucide="settings"></i></div>
+                                <h3>Git & Version Control</h3>
+                            </div>
+                            <p>Collaborative project flows using Git commands, repository structures, branching models, and resolving merge challenges.</p>
+                            <div class="skill-progress"><div class="progress-bar" style="--val: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="projects-gallery">
+                    <!-- Project 1: PalAcademy -->
+                    <div class="project-featured glass-card">
+                        <div class="project-img-side">
+                            <div class="project-img-wrapper">
+                                <img src="assets/project_palacademy.jpg" alt="PalAcademy Dashboard Preview">
+                                <div class="overlay-glass">
+                                    <div class="view-project-btn">
+                                        <i data-lucide="zoom-in"></i>
+                                        <span>Show System Architecture</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-details-side">
+                            <div class="project-tag">Full Stack Java Application</div>
+                            <h3 class="project-title">PalAcademy – Student Management System</h3>
+                            <p class="project-desc">
+                            Academic Administration System is a web application used to manage students, courses, and grades in a college or university. It provides a secure admin login, allows CRUD operations for student records, manages course enrollments and grades, and displays performance statistics through dashboards and charts. Built using Spring Boot, React, Hibernate/JPA, and MySQL.    
+                            </p>
+                            
+                            <div class="project-features-list">
+                                <div><i data-lucide="check-circle-2"></i> Admin Auth with Encryption</div>
+                                <div><i data-lucide="check-circle-2"></i> Interactive Analytics Dashboard</div>
+                                <div><i data-lucide="check-circle-2"></i> Student Registry CRUD & Email Validations</div>
+                                <div><i data-lucide="check-circle-2"></i> Dynamic Grade Registry Editor & Async Class Rolls</div>
+                            </div>
+
+                            <div class="project-tech-stack">
+                                <span>Spring Boot</span>
+                                <span>React (Vite)</span>
+                                <span>Hibernate / JPA</span>
+                                <span>MySQL / H2</span>
+                                <span>Lucide Icons</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    <span>Repository</span>
+                                </a>
+                                <button class="project-link modal-trigger" data-modal="modal-palacademy"><i data-lucide="info"></i> Project Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Minor Projects Row -->
+                    <div class="projects-grid-minor">
+                        <!-- Project 2 -->
+                        <div class="project-card glass-card">
+                            <div class="project-card-header">
+                                <i data-lucide="laptop" class="project-card-icon"></i>
+                                <div class="project-card-links">
+                                    <a href="https://github.com" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    </a>
+                                    <a href="#home"><i data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+                            <h3>Premium Glassmorphic Portfolio</h3>
+                            <p>This actual personal website showing dynamic scrolling, custom interactive theme transitions, state animations, background canvas fluid blobs, and client-side contact capture in local registry storage.</p>
+                            <div class="project-card-tech">
+                                <span>HTML5</span>
+                                <span>Vanilla CSS3</span>
+                                <span>ES6 JS</span>
+                                <span>Lucide Vectors</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card glass-card">
+                            <div class="project-card-header">
+                                <i data-lucide="code" class="project-card-icon"></i>
+                                <div class="project-card-links">
+                                    <a href="https://github.com" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>Logical Algorithm Suite</h3>
+                            <p>A compilation of Java and C/C++ logical programming solutions covering Armstrong numbers, Palindromes, Factorials, Prime verifiers, and digit summaries demonstrating logic structuring.</p>
+                            <div class="project-card-tech">
+                                <span>Java Core</span>
+                                <span>C / C++</span>
+                                <span>Data Structures</span>
+                                <span>Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume & Experience Section -->
+        <section id="resume" class="resume-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Background</span>
+                    <h2 class="section-title">Education & Timeline</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 - 2027</div>
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-tag">Post Graduation</span>
+                            <h3>MCA | Mobile Application and Web Technology</h3>
+                            <p class="timeline-sub">LJ Institutes of Computer Applications, Ahmedabad, Gujarat</p>
+                            <p class="timeline-desc">
+                                Advancing database setups, mobile architecture flows, and enterprise web solutions. Actively building full-stack systems with Spring Boot, Node.js, and React.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2025</div>
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-tag">Graduation</span>
+                            <h3>BCA | Computers</h3>
+                            <p class="timeline-sub">Darshan Institute of Engineering and Technology, Rajkot, Gujarat</p>
+                            <p class="timeline-desc">
+                                Graduated with core honors. Mastered structural programming in C, C++, core Java, web frameworks, relational tables, and completed multiple operational database-linked software layouts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Graduated 2022</div>
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-tag">Secondary Education</span>
+                            <h3>Higher Secondary Schooling</h3>
+                            <p class="timeline-sub">Sunshine School, Jamnagar, Gujarat</p>
+                            <p class="timeline-desc">
+                                Completed Higher Secondary Education in the Commerce stream, developing strong analytical, mathematical, and logical foundations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-cta">
+                    <button class="btn btn-primary" id="download-cv-btn">
+                        <i data-lucide="download"></i>
+                        <span>Download Resume / Profile PDF</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-cards">
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i data-lucide="mail"></i></div>
+                            <div class="info-details">
+                                <h4>Email Me</h4>
+                                <a href="mailto:palakbari2503@gmail.com">palakbari2503@gmail.com</a>
+                                <p class="helper-text">Click to send an email</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div class="info-details">
+                                <h4>Call Me</h4>
+                                <a href="tel:+919023129014">+91 9023129014</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                            <div class="info-details">
+                                <h4>Location</h4>
+                                <p>Ahmedabad, Gujarat, India</p>
+                                <p class="helper-text">Open to remote & on-site positions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card">
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Project Collaboration" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Let's build something great..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="send" id="send-icon"></i>
+                                <span class="spinner hidden" id="send-spinner"></span>
+                            </button>
+                        </form>
+                        <div class="form-success-message hidden" id="form-success">
+                            <i data-lucide="check-circle" class="success-icon"></i>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out, Pal. Your email request was captured and will be replied to shortly at the email you provided.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a data-scroll-to="home" class="logo-text">Pal</a>
+                <p>Building high-performance, elegant software from the backend DB architecture down to fluid frontend animations.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a data-scroll-to="home">Home</a></li>
+                    <li><a data-scroll-to="about">About</a></li>
+                    <li><a data-scroll-to="skills">Skills</a></li>
+                    <li><a data-scroll-to="projects">Projects</a></li>
+                    <li><a data-scroll-to="resume">Resume</a></li>
+                    <li><a data-scroll-to="contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Connect</h4>
+                <div class="footer-social-icons">
+                    <a href="mailto:palakbari2503@gmail.com"><i data-lucide="mail"></i></a>
+                    <a href="tel:+919023129014"><i data-lucide="phone"></i></a>
+                    <a href="https://github.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-palacademy">
+        <div class="modal glass-card">
+            <button class="modal-close" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="modal-body">
+                <h3 class="modal-title">PalAcademy - Student Management System Architecture</h3>
+                <div class="modal-badge">Full Stack Architecture</div>
+                
+                <div class="architecture-layout">
+                    <div class="arch-section">
+                        <h4>Backend (Spring Boot)</h4>
+                        <ul>
+                            <li><strong>JPA Entities:</strong> Model mapping of Student, Course, Enrollment (grade status), and User (credentials) with proper relational annotations (OneToMany, ManyToOne).</li>
+                            <li><strong>SHA-256 Hashing:</strong> Custom password encryption util implemented for security.</li>
+                            <li><strong>REST Controllers:</strong> Standardized JSON request handlers supporting pagination, validation filters, and cross-origin controls.</li>
+                            <li><strong>Data Initialization:</strong> Application runner class automatically loads baseline records into H2/MySQL on deployment for immediate sandbox testing.</li>
+                        </ul>
+                    </div>
+
+                    <div class="arch-section">
+                        <h4>Frontend (React Vite)</h4>
+                        <ul>
+                            <li><strong>Vite Configuration:</strong> Proxy mappings for routing dynamic `/api/` triggers seamlessly to local server port.</li>
+                            <li><strong>State Tracking:</strong> Session caching utilizing localStorage persistence.</li>
+                            <li><strong>Component breakdown:</strong> Custom state directories comprising Auth views, Student directory listings, Catalog components, and grading modules.</li>
+                            <li><strong>Lucide Visuals:</strong> Vector icons providing a crisp vector aesthetics rendering instantly on dynamic grids.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer-info">
+                    <p>Source files for this architecture exist locally in this computer inside the <strong>Projects/Java-FullStack-Project/student-management-system</strong> folder.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Script -->
+    <script src="script.js?v=1.3"></script>
+</body>
+</html>
