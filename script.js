@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Typewriter Effect for Hero Subtitle ---
     const typewriterElement = document.getElementById('typewriter-text');
-    const words = ["Java Developer", "Full Stack Developer", "Backend Engineer", "Software Builder"];
+    const words = ["Java Developer", "Full Stack Developer", "Backend Developer", "Software Developer"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    let typingSpeed = 100;
+    let typingSpeed = 200;
 
     function handleTypewriter() {
         if (!typewriterElement) return;
